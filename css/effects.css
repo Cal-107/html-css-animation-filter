@@ -1,0 +1,67 @@
+/* ex-1 */
+.ex-1-square {
+    transition: background-color .7s;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+/* ex-2 */
+.ex-2-square {
+    transition: width .7s ease;
+}
+
+.ex-2-square:active {
+width: 1000px;
+}
+
+/* ex-3 */
+.ex-3-square {
+    transition: border-radius .7s ease;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+/* ex-4 */
+.ex-4-square {
+    /* transition: opacity 3s ease; */
+    opacity: 100%;
+    animation: opacity 1s
+}
+
+@keyframes opacity {
+    from {opacity: 100%;}
+    to {opacity: 0%;}
+}
+
+/* .ex-4-square:hover { */
+    /* opacity: 0%; */
+/* } */
+
+/* ex-6 */
+.ex-5-square {
+    transition: transform 1s ease;
+                /* height 1s ease; */
+}
+
+.ex-5-square:hover {
+    transform: scale(1.5);
+    /* height: 100px; */
+}
+
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+
+/* ex-6 */
+/* .ex-6-img { */
+    /* transition: filter 1s ease; */
+/* } */
+
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
