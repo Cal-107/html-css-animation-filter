@@ -71,8 +71,7 @@ width: 1000px;
 }
 
 .ex-7-img:hover {
-    filter: saturate(5);
-    filter: sepia(30%);      
+    filter: saturate(5) sepia(30%);    
 }
 
 /* ex-8 */
@@ -136,4 +135,38 @@ width: 1000px;
   }
 
   /* ex-12 */
-  
+.ex-12-top-white, .ex-12-bottom-white {
+    transform: translateX(0px);
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: position 1s linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: position2 1s linear;
+}
+
+@keyframes position {
+    0% {
+        transform: translateX(0)
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes position2 {
+    0% {
+        transform: translateX(0)
+    }
+    50% {
+        transform: translateX(-90px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
